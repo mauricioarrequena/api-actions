@@ -23,7 +23,7 @@ npm-debug.log*
 Thumbs.db
 
 # NPM package lock file
-package-lock.json
+# package-lock.json
 
 # TypeScript specific files
 *.tsbuildinfo

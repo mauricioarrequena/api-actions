@@ -18,7 +18,7 @@ COPY --from=builder /app/package*.json ./
 RUN npm ci --omit=dev
 
 COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/ormconfig.js ./ormconfig.js # if needed
+# COPY --from=builder /app/ormconfig.js ./ormconfig.js # if needed
 COPY --from=builder /app/tsconfig.json ./tsconfig.json
 
 CMD ["node", "dist/index.js"]
